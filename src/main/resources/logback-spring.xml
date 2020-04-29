@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="log.path" value="log" />
+    <contextName>logback</contextName>
+    <!--输出日志到控制台-->
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <layout>
+            <pattern>
+                %d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </layout>
+    </appender>
+
+    <!--输出日志到文件-->
+    <appender name="fileLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>debug</level>
+            <onMatch>DENY</onMatch>
+        </filter>
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+        <!--指定文件的输出位置-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>
+                d:/${log.path}/%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
+            <totalSizeCap>2GB</totalSizeCap>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+        </rollingPolicy>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="consoleLog"/><!--在控制台打印-->
+        <appender-ref ref="fileLog"/><!--打印到文件中-->
+    </root>
+
+    <!--有logger的配置，不指定级别，不指定appender-->
+    <!--将控制controller包下的所有类的日志的打印-->
+    <!--将controller 包下的所有类的日志的打印，但是并没用设置打印级别，所以继承他的上级的日志级别“info”-->
+    <!--可用可不用-->
+   <!-- <logger name="cn.kgc.demo5.controller"/>-->
+    <!--不会继承上级日志级别了-->
+    <logger name="cn.ling.medical2.controller" level="info" additivity="false">
+        <appender-ref ref="consoleLog"/>
+    </logger>
+</configuration>
