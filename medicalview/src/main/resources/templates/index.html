@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home One || Clainc || Health & Medical HTML Template</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="static/portal/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/portal/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/portal/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/portal/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/portal/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/portal/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/portal/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/portal/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/portal/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/portal/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/portal/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/portal/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/portal/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/portal/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/portal/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="static/portal/css/style.css">
+    <link rel="stylesheet" href="static/portal/css/responsive.css">
+</head>
+
+<body>
+    <div class="preloader"></div><!-- /.preloader -->
+    <div class="page-wrapper">
+        <section class="topbar-one">
+            <div class="container">
+                <ul class="topbar-one__contact">
+                    <li class="topbar-one__contact-item"><a href="mailto:help@example.com"><i class="material-icons">email</i>help@example.com</a></li>
+                    <li class="topbar-one__contact-item"><a href="callto:123456789101"><i class="material-icons">local_phone</i>1234&nbsp;&nbsp;5678&nbsp;&nbsp;9101</a></li>
+                </ul><!-- /.topbar-one__contact -->
+                <div class="topbar-one__buttons">
+                    <select class="selectpicker topbar-one__language">
+                        <option>En</option>
+                        <option>Bn</option>
+                        <option>Du</option>
+                    </select>
+                    <a href="appointment.html" class="topbar-one__btn">Get Appointment</a>
+                </div><!-- /.topbar-one__buttons -->
+            </div><!-- /.container -->
+        </section><!-- /.topbar-one -->
+        <header class="site-header header-one">
+            <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                <div class="container clearfix">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="logo-box clearfix">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="static/portal/images/resources/logo-1-1.png" class="main-logo" alt="Awesome Image" />
+                        </a>
+                        <button class="menu-toggler" data-target=".main-navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div><!-- /.logo-box -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main-navigation">
+                        <ul class=" navigation-box">
+                            <li class="current">
+                                <a href="index.html">Home</a>
+                                <ul class="submenu">
+                                    <li><a href="index.html">Home One</a></li>
+                                    <li><a href="index-2.html">Home Two</a></li>
+                                    <li><a href="index-3.html">Home Three</a></li>
+                                    <li><a href="index-4.html">Home Four</a></li>
+                                    <li><a href="dental-1.html">Dental One</a></li>
+                                    <li><a href="dental-2.html">Dental Two</a></li>
+                                    <li><a href="blood-donation.html">Blood Dontation</a></li>
+                                    <li><a href="blood-donation.html">Header Versions</a>
+                                        <ul class="submenu">
+                                            <li><a href="index.html">Header One</a></li>
+                                            <li><a href="index-2.html">Header Two</a></li>
+                                            <li><a href="index-3.html">Header Three</a></li>
+                                            <li><a href="dental-1.html">Header Four</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li>
+                                <a href="services.html">Departments</a>
+                            </li>
+                            <li>
+                                <a href="about-1.html">About</a>
+                                <ul class="submenu">
+                                    <li><a href="about-1.html">About One</a></li>
+                                    <li><a href="about-2.html">About Two</a></li>          
+                                    <li><a href="about-3.html">About Three</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            
+                            <li>
+                                <a href="#">Pages</a>
+                                <ul class="submenu">
+                                    <li><a href="doctors.html">Team</a></li>
+                                    <li><a href="history-slide.html">History</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="appointment.html">Appointment</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li>
+                                <a href="pharmacy.html">Shop</a>
+                                <ul class="submenu">
+                                    <li><a href="pharmacy.html">Shop Page</a></li>
+                                    <li><a href="medicine-details.html">Medicine Details</a></li>
+                                    <li><a href="cart.html">Cart Page</a></li>
+                                    <li><a href="checkout.html">Checkout Page</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li><a href="notice.html">Notice</a></li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                                <ul class="submenu">
+                                    <li><a href="blog-1.html">Blog Style 01</a></li>
+                                    <li><a href="blog-2.html">Blog Style 02</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li><a href="contact.html">加盟服务</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                    <div class="right-side-box">
+                        <a th:href="@{'login.html'}" class="header-one__login">Login</a>
+                    </div><!-- /.right-side-box -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header><!-- /.header-one -->
+        <div class="banner-wrapper">
+            <section class="banner-one banner-carousel__one no-dots owl-theme owl-carousel">
+                <div class="banner-one__slide banner-one__slide-one" style="background-image: url(static/portal/images/slider/slider-1-1.jpg);">
+                    <div class="container">
+                        <img src="static/portal/images/slider/slider-1-2.png" alt="Awesome Image" class="banner-one__person" />
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <h3 class="banner-one__title banner-one__light-color">Better Technology For <br> Better Health Care</h3><!-- /.banner-one__title -->
+                                <p class="banner-one__text banner-one__light-color">Leverage agile frameworks to provide a robust synopsis for high level overview Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p><!-- /.banner-one__text -->
+                                <a href="#" class="thm-btn banner-one__btn">Learn More</a>
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.banner-one__slide -->
+                <div class="banner-one__slide banner-one__slide-two" style="background-image: url(static/portal/images/slider/slider-1-2.jpg);">
+                    <div class="container">
+                        <img src="static/portal/images/resources/feature-1-1.png" alt="Awesome Image" class="banner-one__person" />
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <h3 class="banner-one__title banner-one__light-color">Better Technology For <br> Better Health Care</h3><!-- /.banner-one__title -->
+                                <p class="banner-one__text banner-one__light-color">Leverage agile frameworks to provide a robust synopsis for high level overview Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p><!-- /.banner-one__text -->
+                                <a href="#" class="thm-btn banner-one__btn">Learn More</a>
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.banner-one__slide -->
+            </section><!-- /.banner-one -->
+            <div class="carousel-btn-block banner-carousel-btn">
+                <span class="carousel-btn left-btn"><i class="fa fa-angle-left"></i></span>
+                <span class="carousel-btn right-btn"><i class="fa fa-angle-right"></i></span>
+            </div><!-- /.carousel-btn-block banner-carousel-btn -->
+        </div><!-- /.banner-wrapper -->
+        <section class="appointment-one">
+            <div class="container">
+                <div class="inner-container wow fadeInUp" data-wow-duration="1s">
+                    <h3 class="appointment-one__title">Get an Appointment</h3><!-- /.appointment-one__title -->
+                    <form action="inc/sendemail.php" class="appointment-one__form contact-form-vaidated">
+                        <div class="row align-items-end">
+                            <div class="col-xl-5 col-lg-6">
+                                <label class="appointment-one__label">Full Name</label>
+                                <div class="appointment-one__form-group">
+                                    <div class="appointment-one__icon">
+                                        <i class="material-icons">person</i>
+                                    </div><!-- /.appointment-one__icon -->
+                                    <input type="text" name="name" class="appointment-one__field" placeholder="Full name">
+                                </div><!-- /.appointment-one__form-group -->
+                            </div><!-- /.col-lg-5 -->
+                            <div class="col-xl-4 col-lg-6">
+                                <label class="appointment-one__label">Age</label>
+                                <div class="appointment-one__form-group">
+                                    <div class="appointment-one__icon">
+                                        <i class="material-icons">date_range</i>
+                                    </div><!-- /.appointment-one__icon -->
+                                    <input type="text" name="age" class="appointment-one__field datepicker" placeholder="Enter your age">
+                                </div><!-- /.appointment-one__form-group -->
+                            </div><!-- /.col-lg-4 -->
+                            <div class="col-xl-3 col-lg-6">
+                                <label class="appointment-one__label">Gender</label>
+                                <div class="appointment-one__form-group">
+                                    <div class="appointment-one__icon">
+                                        <i class="material-icons">person</i>
+                                    </div><!-- /.appointment-one__icon -->
+                                    <div class="appointment-one__switch-wrap">
+                                        <input type="hidden" name="gender">
+                                        <button class="appointment-one__switch active">Male</button>
+                                        <button class="appointment-one__switch">Female</button>
+                                    </div><!-- /.appointment-one__switch-wrap -->
+                                </div><!-- /.appointment-one__form-group -->
+                            </div><!-- /.col-lg-3 -->
+                            <div class="col-xl-5 col-lg-6">
+                                <label class="appointment-one__label">Phone Number</label>
+                                <div class="appointment-one__form-group">
+                                    <div class="appointment-one__icon">
+                                        <i class="material-icons">phone</i>
+                                    </div><!-- /.appointment-one__icon -->
+                                    <input type="text" name="phone" class="appointment-one__field" placeholder="Enter number">
+                                </div><!-- /.appointment-one__form-group -->
+                            </div><!-- /.col-lg-5 -->
+                            <div class="col-xl-4 col-lg-6">
+                                <label class="appointment-one__label">Appointment Date</label>
+                                <div class="appointment-one__form-group">
+                                    <div class="appointment-one__icon">
+                                        <i class="material-icons">date_range</i>
+                                    </div><!-- /.appointment-one__icon -->
+                                    <input type="text" name="booking_date" class="appointment-one__field datepicker" placeholder="Set a date">
+                                </div><!-- /.appointment-one__form-group -->
+                            </div><!-- /.col-lg-4 -->
+                            <div class="col-xl-3 col-lg-6">
+                                <label class="appointment-one__label">Consultant Hour</label>
+                                <div class="appointment-one__form-group">
+                                    <div class="appointment-one__icon">
+                                        <i class="material-icons">access_time</i>
+                                    </div><!-- /.appointment-one__icon -->
+                                    <div class="appointment-one__switch-wrap">
+                                        <input type="hidden" name="schedule">
+                                        <button class="appointment-one__switch">Morning</button>
+                                        <button class="appointment-one__switch active">Evening</button>
+                                    </div><!-- /.appointment-one__switch-wrap -->
+                                </div><!-- /.appointment-one__form-group -->
+                            </div><!-- /.col-lg-3 -->
+                            <div class="col-xl-5 col-lg-6">
+                                <label class="appointment-one__label">Department</label>
+                                <div class="appointment-one__form-group">
+                                    <select class="selectpicker">
+                                        <option>Cardiology Department</option>
+                                        <option>Eyes care Department</option>
+                                        <option>Neurology Department</option>
+                                        <option>Pediatrics Department</option>
+                                        <option>Hepatology Department</option>
+                                    </select>
+                                </div><!-- /.appointment-one__form-group -->
+                            </div><!-- /.col-lg-5 -->
+                            <div class="col-xl-4 col-lg-6">
+                                <label class="appointment-one__label">Doctor</label>
+                                <div class="appointment-one__form-group">
+                                    <select class="selectpicker">
+                                        <option>Select Doctor</option>
+                                        <option>Charlyn Jongebloed</option>
+                                        <option>Cortney Savala</option>
+                                        <option>Juliana Cherrington</option>
+                                        <option>Cleotilde Sarette</option>
+                                    </select>
+                                </div><!-- /.appointment-one__form-group -->
+                            </div><!-- /.col-lg-4 -->
+                            <div class="col-xl-3 col-lg-12">
+                                <button type="submit" class="appointment-one__btn thm-btn">Submit Request</button>
+                            </div><!-- /.col-lg-3 -->
+                        </div><!-- /.row -->
+                    </form>
+                    <div class="result"></div><!-- /.result -->
+                </div><!-- /.inner-container -->
+            </div><!-- /.container -->
+        </section><!-- /.appointment-one -->
+        <section class="about-one">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <div class="about-one__content-block">
+                            <h3 class="about-one__title">About US</h3><!-- /.about-one__title -->
+                            <p class="about-one__tag-line">Better health care with efficient cost is the main focuse of our hospital. </p><!-- /.about-one__tag-line -->
+                            <p class="about-one__text">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p><!-- /.about-one__text -->
+                            <p class="about-one__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><!-- /.about-one__text -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <ul class="about-one__features">
+                                        <li class="about-one__features-item">Medical Quality</li>
+                                        <li class="about-one__features-item">Modern Technology</li>
+                                    </ul><!-- /.about-one__features -->
+                                </div><!-- /.col-lg-6 -->
+                                <div class="col-lg-6">
+                                    <ul class="about-one__features">
+                                        <li class="about-one__features-item">Natural Environment</li>
+                                        <li class="about-one__features-item">Experienced Doctors</li>
+                                    </ul><!-- /.about-one__features -->
+                                </div><!-- /.col-lg-6 -->
+                            </div><!-- /.row -->
+                            <a href="#" class="thm-btn about-one__btn">Learn More</a>
+                        </div><!-- /.about-one__content-block -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="about-one__image-wrap wow fadeInRight" data-wow-duration="1s">
+                            <div class="row no-gutters">
+                                <div class="col-lg-7 col-md-7 col-sm-7">
+                                    <div class="about-one__image">
+                                        <img src="static/portal/images/resources/about-1-1.jpg" alt="Awesome Image" />
+                                    </div><!-- /.about-one__image -->
+                                </div><!-- /.col-lg-7 -->
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <div class="about-one__image">
+                                        <img src="static/portal/images/resources/about-1-2.jpg" alt="Awesome Image" />
+                                    </div><!-- /.about-one__image -->
+                                    <div class="about-one__image">
+                                        <img src="static/portal/images/resources/about-1-3.jpg" alt="Awesome Image" />
+                                    </div><!-- /.about-one__image -->
+                                </div><!-- /.col-lg-5 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.about-one__image-wrap -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.about-one -->
+        <section class="service-one thm-gray-bg">
+            <div class="container">
+                <div class="block-title text-center">
+                    <h2 class="block-title__title">Our Departments</h2><!-- /.block-title__title -->
+                    <p class="block-title__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uttom <br> labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p><!-- /.block-title__text -->
+                </div><!-- /.block-title -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-one__single wow fadeInLeft" data-wow-duration="1s">
+                            <div class="service-one__icon">
+                                <i class="clainc-icon-heart"></i>
+                            </div><!-- /.service-one__icon -->
+                            <div class="service-one__content">
+                                <h3 class="service-one__title"><a href="services.html">Cardiology</a></h3>
+                                <p class="service-one__text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p><!-- /.service-one__text -->
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-one__single wow fadeInUp" data-wow-duration="1s">
+                            <div class="service-one__icon">
+                                <i class="clainc-icon-brain"></i>
+                            </div><!-- /.service-one__icon -->
+                            <div class="service-one__content">
+                                <h3 class="service-one__title"><a href="services.html">Neurology</a></h3>
+                                <p class="service-one__text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p><!-- /.service-one__text -->
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-one__single wow fadeInRight" data-wow-duration="1s">
+                            <div class="service-one__icon">
+                                <i class="clainc-icon-tooth1"></i>
+                            </div><!-- /.service-one__icon -->
+                            <div class="service-one__content">
+                                <h3 class="service-one__title"><a href="services.html">Dental Care</a></h3>
+                                <p class="service-one__text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p><!-- /.service-one__text -->
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-one__single wow fadeInLeft" data-wow-duration="1s">
+                            <div class="service-one__icon">
+                                <i class="clainc-icon-eye"></i>
+                            </div><!-- /.service-one__icon -->
+                            <div class="service-one__content">
+                                <h3 class="service-one__title"><a href="services.html">Eyes Care</a></h3>
+                                <p class="service-one__text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p><!-- /.service-one__text -->
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-one__single wow fadeInUp" data-wow-duration="1s">
+                            <div class="service-one__icon">
+                                <i class="clainc-icon-kidney"></i>
+                            </div><!-- /.service-one__icon -->
+                            <div class="service-one__content">
+                                <h3 class="service-one__title"><a href="services.html">Hepatology</a></h3>
+                                <p class="service-one__text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p><!-- /.service-one__text -->
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-one__single wow fadeInRight" data-wow-duration="1s">
+                            <div class="service-one__icon">
+                                <i class="clainc-icon-baby-boy"></i>
+                            </div><!-- /.service-one__icon -->
+                            <div class="service-one__content">
+                                <h3 class="service-one__title"><a href="services.html">Pediatrics</a></h3>
+                                <p class="service-one__text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p><!-- /.service-one__text -->
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.service-one -->
+        <section class="feature-one">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="custom-col-39">
+                        <div class="video-one">
+                            <img src="static/portal/images/resources/video-1-1.jpg" alt="Awesome Image" />
+                            <a href="https://www.youtube.com/watch?v=-j0dlcfekqw" class="video-popup"><i class="clainc-icon-play-button"></i></a>
+                        </div><!-- /.video-one -->
+                    </div><!-- /.col-lg-5 -->
+                    <div class="custom-col-61">
+                        <div class="feature-one__content-block">
+                            <span class="feature-one__curvs"></span>
+                            <div class="inner-content">
+                                <div class="block-title">
+                                    <h2 class="block-title__title block-title__light-color">Our Speciality</h2><!-- /.block-title__title -->
+                                    <p class="block-title__text block-title__light-color">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close</p><!-- /.block-title__text -->
+                                </div><!-- /.block-title -->
+                                <div class="row high-gutters">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="feature-one__single">
+                                            <div class="feature-one__icon">
+                                                <i class="clainc-icon-prize-badge-with-star-and-ribbon"></i>
+                                            </div><!-- /.feature-one__icon -->
+                                            <div class="feature-one__content">
+                                                <h3 class="feature-one__title"><a href="#">98% Success Rate</a></h3><!-- /.feature-one__title -->
+                                                <p class="feature-one__text">Lorem ipsum dolor sit amet consept <br> ctetur adipisc</p>
+                                            </div><!-- /.feature-one__content -->
+                                        </div><!-- /.feature-one__single -->
+                                    </div><!-- /.col-lg-6 -->
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="feature-one__single">
+                                            <div class="feature-one__icon">
+                                                <i class="clainc-icon-operating-room"></i>
+                                            </div><!-- /.feature-one__icon -->
+                                            <div class="feature-one__content">
+                                                <h3 class="feature-one__title"><a href="#">Professional Staff</a></h3><!-- /.feature-one__title -->
+                                                <p class="feature-one__text">Lorem ipsum dolor sit amet consept <br> ctetur adipisc</p>
+                                            </div><!-- /.feature-one__content -->
+                                        </div><!-- /.feature-one__single -->
+                                    </div><!-- /.col-lg-6 -->
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="feature-one__single">
+                                            <div class="feature-one__icon">
+                                                <i class="clainc-icon-doctor"></i>
+                                            </div><!-- /.feature-one__icon -->
+                                            <div class="feature-one__content">
+                                                <h3 class="feature-one__title"><a href="#">Experienced Doctors</a></h3><!-- /.feature-one__title -->
+                                                <p class="feature-one__text">Lorem ipsum dolor sit amet consept <br> ctetur adipisc</p>
+                                            </div><!-- /.feature-one__content -->
+                                        </div><!-- /.feature-one__single -->
+                                    </div><!-- /.col-lg-6 -->
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="feature-one__single">
+                                            <div class="feature-one__icon">
+                                                <i class="clainc-icon-ambulance1"></i>
+                                            </div><!-- /.feature-one__icon -->
+                                            <div class="feature-one__content">
+                                                <h3 class="feature-one__title"><a href="#">24/7 Emergency Cares</a></h3><!-- /.feature-one__title -->
+                                                <p class="feature-one__text">Lorem ipsum dolor sit amet consept <br> ctetur adipisc</p>
+                                            </div><!-- /.feature-one__content -->
+                                        </div><!-- /.feature-one__single -->
+                                    </div><!-- /.col-lg-6 -->
+                                </div><!-- /.row high-gutters -->
+                            </div><!-- /.inner-content -->
+                        </div><!-- /.feature-one__content-block -->
+                    </div><!-- /.col-lg-7 -->
+                </div><!-- /.row no-gutters -->
+            </div><!-- /.container -->
+        </section><!-- /.feature-one -->
+        <section class="feature-two">
+            <div class="container">
+                <img src="static/portal/images/resources/feature-1-1.png" alt="Awesome Image" class="feature-two__person wow fadeInUp" />
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="feature-two__content-block">
+                            <div class="block-title">
+                                <h2 class="block-title__title">Why Choose Our Hospital</h2><!-- /.block-title__title -->
+                                <p class="block-title__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid- <br>idunt ut labore et dolore magna aliqua. </p><!-- /.block-title__text -->
+                            </div><!-- /.block-title -->
+                            <ul class="nav nav-tabs feature-two__tab-title" role="tablist">
+                                <li class="nav-item feature-two__tab-title-item">
+                                    <a class="nav-link feature-two__tab-title-link active" href="#mission" role="tab" data-toggle="tab">Mission</a>
+                                </li>
+                                <li class="nav-item feature-two__tab-title-item">
+                                    <a class="nav-link feature-two__tab-title-link" href="#vision" role="tab" data-toggle="tab">Vision</a>
+                                </li>
+                                <li class="nav-item feature-two__tab-title-item">
+                                    <a class="nav-link feature-two__tab-title-link" href="#success" role="tab" data-toggle="tab">Success</a>
+                                </li>
+                                <li class="nav-item feature-two__tab-title-item">
+                                    <a class="nav-link feature-two__tab-title-link" href="#history" role="tab" data-toggle="tab">History</a>
+                                </li>
+                            </ul>
+                            <div class="feature-two__tab-content tab-content">
+                                <div role="tabpanel" class="tab-pane show active  animated fadeInUp" id="mission">
+                                    <div class="feature-two__content">
+                                        <p class="feature-two__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid- idunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                        <p class="feature-two__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <a href="#" class="thm-btn feature-two__btn">Learn More</a>
+                                    </div><!-- /.feature-two__content -->
+                                </div><!-- /.tab-pane -->
+                                <div role="tabpanel" class="tab-pane animated fadeInUp" id="vision">
+                                    <div class="feature-two__content">
+                                        <p class="feature-two__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid- idunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                        <p class="feature-two__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <a href="#" class="thm-btn feature-two__btn">Learn More</a>
+                                    </div><!-- /.feature-two__content -->
+                                </div><!-- /.tab-pane -->
+                                <div role="tabpanel" class="tab-pane  animated fadeInUp" id="success">
+                                    <div class="feature-two__content">
+                                        <p class="feature-two__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid- idunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                        <p class="feature-two__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <a href="#" class="thm-btn feature-two__btn">Learn More</a>
+                                    </div><!-- /.feature-two__content -->
+                                </div><!-- /.tab-pane -->
+                                <div role="tabpanel" class="tab-pane animated fadeInUp" id="history">
+                                    <div class="feature-two__content">
+                                        <p class="feature-two__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid- idunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                        <p class="feature-two__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <a href="#" class="thm-btn feature-two__btn">Learn More</a>
+                                    </div><!-- /.feature-two__content -->
+                                </div><!-- /.tab-pane -->
+                            </div><!-- /.tab-content -->
+                        </div><!-- /.feature-two__content-block -->
+                    </div><!-- /.col-lg-7 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.feature-two -->
+        <section class="testimonials-one">
+            <div class="testimonials-one__background-image" style="background-image: url(static/portal/images/background/testi-bg-1-1.jpg);"></div><!-- /.testimonials-one__background-image -->
+            <div class="container">
+                <div class="block-title text-center">
+                    <h2 class="block-title__title block-title__light-color">What Patients Say About Us</h2><!-- /.block-title__title -->
+                    <p class="block-title__text block-title__light-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uttom <br> labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p><!-- /.block-title__text -->
+                </div><!-- /.block-title -->
+                <div class="testimonials-one__carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__icon">
+                                <div class="testimonials-one__qoute"><img src="static/portal/images/resources/testi-qoute-1-1.png" alt="Awesome Image" /></div><!-- /.testimonials-one__qoute -->
+                                <div class="inner-block">
+                                    <img src="static/portal/images/resources/testi-1-1.jpg" alt="Awesome Image" />
+                                </div><!-- /.inner-block -->
+                            </div><!-- /.testimonials-one__icon -->
+                            <div class="testimonials-one__content">
+                                <h3 class="testimonials-one__title">Parthenia Woodington</h3><!-- /.testimonials-one__title -->
+                                <span class="testimonials-one__designation">Dental Care</span>
+                                <p class="testimonials-one__text">Lorem ipsum dolor sit amet, consectetur adipiscing eseiusmod tempor incididunt ut labore et dolore magna aliqua. Ripuis ipsum sussa pendisse ultrices gravida.</p>
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__icon">
+                                <div class="testimonials-one__qoute"><img src="static/portal/images/resources/testi-qoute-1-1.png" alt="Awesome Image" /></div><!-- /.testimonials-one__qoute -->
+                                <div class="inner-block">
+                                    <img src="static/portal/images/resources/testi-1-2.jpg" alt="Awesome Image" />
+                                </div><!-- /.inner-block -->
+                            </div><!-- /.testimonials-one__icon -->
+                            <div class="testimonials-one__content">
+                                <h3 class="testimonials-one__title">Refugio Szewc</h3><!-- /.testimonials-one__title -->
+                                <span class="testimonials-one__designation">Cardiology</span>
+                                <p class="testimonials-one__text">Lorem ipsum dolor sit amet, consectetur adipiscing eseiusmod tempor incididunt ut labore et dolore magna aliqua. Ripuis ipsum sussa pendisse ultrices gravida.</p>
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__icon">
+                                <div class="testimonials-one__qoute"><img src="static/portal/images/resources/testi-qoute-1-1.png" alt="Awesome Image" /></div><!-- /.testimonials-one__qoute -->
+                                <div class="inner-block">
+                                    <img src="static/portal/images/resources/testi-1-1.jpg" alt="Awesome Image" />
+                                </div><!-- /.inner-block -->
+                            </div><!-- /.testimonials-one__icon -->
+                            <div class="testimonials-one__content">
+                                <h3 class="testimonials-one__title">Tyson Centrone</h3><!-- /.testimonials-one__title -->
+                                <span class="testimonials-one__designation">Dental Care</span>
+                                <p class="testimonials-one__text">Lorem ipsum dolor sit amet, consectetur adipiscing eseiusmod tempor incididunt ut labore et dolore magna aliqua. Ripuis ipsum sussa pendisse ultrices gravida.</p>
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__icon">
+                                <div class="testimonials-one__qoute"><img src="static/portal/images/resources/testi-qoute-1-1.png" alt="Awesome Image" /></div><!-- /.testimonials-one__qoute -->
+                                <div class="inner-block">
+                                    <img src="static/portal/images/resources/testi-1-2.jpg" alt="Awesome Image" />
+                                </div><!-- /.inner-block -->
+                            </div><!-- /.testimonials-one__icon -->
+                            <div class="testimonials-one__content">
+                                <h3 class="testimonials-one__title">Nicolle Bowser</h3><!-- /.testimonials-one__title -->
+                                <span class="testimonials-one__designation">Cardiology</span>
+                                <p class="testimonials-one__text">Lorem ipsum dolor sit amet, consectetur adipiscing eseiusmod tempor incididunt ut labore et dolore magna aliqua. Ripuis ipsum sussa pendisse ultrices gravida.</p>
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__icon">
+                                <div class="testimonials-one__qoute"><img src="static/portal/images/resources/testi-qoute-1-1.png" alt="Awesome Image" /></div><!-- /.testimonials-one__qoute -->
+                                <div class="inner-block">
+                                    <img src="static/portal/images/resources/testi-1-1.jpg" alt="Awesome Image" />
+                                </div><!-- /.inner-block -->
+                            </div><!-- /.testimonials-one__icon -->
+                            <div class="testimonials-one__content">
+                                <h3 class="testimonials-one__title">Barton Sterr</h3><!-- /.testimonials-one__title -->
+                                <span class="testimonials-one__designation">Dental Care</span>
+                                <p class="testimonials-one__text">Lorem ipsum dolor sit amet, consectetur adipiscing eseiusmod tempor incididunt ut labore et dolore magna aliqua. Ripuis ipsum sussa pendisse ultrices gravida.</p>
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__icon">
+                                <div class="testimonials-one__qoute"><img src="static/portal/images/resources/testi-qoute-1-1.png" alt="Awesome Image" /></div><!-- /.testimonials-one__qoute -->
+                                <div class="inner-block">
+                                    <img src="static/portal/images/resources/testi-1-2.jpg" alt="Awesome Image" />
+                                </div><!-- /.inner-block -->
+                            </div><!-- /.testimonials-one__icon -->
+                            <div class="testimonials-one__content">
+                                <h3 class="testimonials-one__title">Kylie Kalafarski</h3><!-- /.testimonials-one__title -->
+                                <span class="testimonials-one__designation">Cardiology</span>
+                                <p class="testimonials-one__text">Lorem ipsum dolor sit amet, consectetur adipiscing eseiusmod tempor incididunt ut labore et dolore magna aliqua. Ripuis ipsum sussa pendisse ultrices gravida.</p>
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                </div><!-- /.testimonials-one__carousel -->
+            </div><!-- /.container -->
+        </section><!-- /.testimonials-one -->
+        <section class="blog-one">
+            <div class="container">
+                <div class="block-title text-center">
+                    <h2 class="block-title__title">Latest News Update</h2><!-- /.block-title__title -->
+                    <p class="block-title__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uttom <br> labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p><!-- /.block-title__text -->
+                </div><!-- /.block-title -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-one__single wow fadeInUp" data-wow-duration="2s">
+                            <div class="blog-one__image">
+                                <img src="static/portal/images/blog/blog-1-1.jpg" alt="Awesome Image" />
+                                <div class="blog-one__image-hover">
+                                    <a href="blog-details.html" class="blog-three__hvr-link"><i class="material-icons">insert_link</i></a>
+                                </div><!-- /.blog-one__image-hover -->                                
+                            </div><!-- /.blog-one__image -->
+                            <div class="blog-one__content">
+                                <div class="blog-one__top">
+                                    <h3 class="blog-one__title"><a href="blog-details.html">How to handle your kids’ ailmets</a></h3><!-- /.blog-one__title -->
+                                    <a class="blog-one__date" href="blog-details.html"><i class="material-icons">access_time</i> 12 January 2019</a>
+                                    <p class="blog-one__text">Lorem ipsum dolorit amet consectetur adipi scing elit sedo eiusmod incididunt uttom labore et dolore magna aliqua...</p><!-- /.blog-one__text -->
+                                </div><!-- /.blog-one__top -->
+                                <div class="blog-one__bottom">
+                                    <a href="blog-details.html" class="blog-one__link">Read More</a>
+                                    <div class="blog-one__meta">
+                                        <a href="blog-details.html" class="blog-one__meta-link"><i class="material-icons">favorite_border</i>74</a>
+                                        <a href="blog-details.html" class="blog-one__meta-link"><i class="material-icons">chat_bubble_outline</i>12</a>
+                                        <a href="blog-details.html" class="blog-one__meta-link"><i class="material-icons">share</i>35</a>
+                                    </div><!-- /.blog-one__meta -->
+                                </div><!-- /.blog-one__bottom -->
+                            </div><!-- /.blog-one__content -->
+                        </div><!-- /.blog-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="blog-one__single wow fadeInUp" data-wow-duration="2s">
+                            <div class="blog-one__image">
+                                <img src="static/portal/images/blog/blog-1-2.jpg" alt="Awesome Image" />
+                                <div class="blog-one__image-hover">
+                                    <a href="blog-details.html" class="blog-three__hvr-link"><i class="material-icons">insert_link</i></a>
+                                </div><!-- /.blog-one__image-hover -->
+                            </div><!-- /.blog-one__image -->
+                            <div class="blog-one__content">
+                                <div class="blog-one__top">
+                                    <h3 class="blog-one__title"><a href="blog-details.html">Negative statin stories add to heart</a></h3><!-- /.blog-one__title -->
+                                    <a class="blog-one__date" href="blog-details.html"><i class="material-icons">access_time</i> 12 January 2019</a>
+                                    <p class="blog-one__text">Lorem ipsum dolorit amet consectetur adipi scing elit sedo eiusmod incididunt uttom labore et dolore magna aliqua...</p><!-- /.blog-one__text -->
+                                </div><!-- /.blog-one__top -->
+                                <div class="blog-one__bottom">
+                                    <a href="blog-details.html" class="blog-one__link">Read More</a>
+                                    <div class="blog-one__meta">
+                                        <a href="blog-details.html" class="blog-one__meta-link"><i class="material-icons">favorite_border</i>74</a>
+                                        <a href="blog-details.html" class="blog-one__meta-link"><i class="material-icons">chat_bubble_outline</i>12</a>
+                                        <a href="blog-details.html" class="blog-one__meta-link"><i class="material-icons">share</i>35</a>
+                                    </div><!-- /.blog-one__meta -->
+                                </div><!-- /.blog-one__bottom -->
+                            </div><!-- /.blog-one__content -->
+                        </div><!-- /.blog-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="blog-one__single wow fadeInUp" data-wow-duration="2s">
+                            <div class="blog-one__image">
+                                <img src="static/portal/images/blog/blog-1-3.jpg" alt="Awesome Image" />
+                                <div class="blog-one__image-hover">
+                                    <a href="blog-details.html" class="blog-three__hvr-link"><i class="material-icons">insert_link</i></a>
+                                </div><!-- /.blog-one__image-hover -->
+                            </div><!-- /.blog-one__image -->
+                            <div class="blog-one__content">
+                                <div class="blog-one__top">
+                                    <h3 class="blog-one__title"><a href="blog-details.html">Lung cancer survival rate improves</a></h3><!-- /.blog-one__title -->
+                                    <a class="blog-one__date" href="blog-details.html"><i class="material-icons">access_time</i> 12 January 2019</a>
+                                    <p class="blog-one__text">Lorem ipsum dolorit amet consectetur adipi scing elit sedo eiusmod incididunt uttom labore et dolore magna aliqua...</p><!-- /.blog-one__text -->
+                                </div><!-- /.blog-one__top -->
+                                <div class="blog-one__bottom">
+                                    <a href="blog-details.html" class="blog-one__link">Read More</a>
+                                    <div class="blog-one__meta">
+                                        <a href="blog-details.html" class="blog-one__meta-link"><i class="material-icons">favorite_border</i>74</a>
+                                        <a href="blog-details.html" class="blog-one__meta-link"><i class="material-icons">chat_bubble_outline</i>12</a>
+                                        <a href="blog-details.html" class="blog-one__meta-link"><i class="material-icons">share</i>35</a>
+                                    </div><!-- /.blog-one__meta -->
+                                </div><!-- /.blog-one__bottom -->
+                            </div><!-- /.blog-one__content -->
+                        </div><!-- /.blog-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.blog-one -->
+        <footer class="footer-one">
+            <div class="footer-one__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="footer-one__widget footer-one__link-widget">
+                                <h3 class="footer-one__widget-title">Nevigation</h3><!-- /.footer-one__widget-title -->
+                                <ul class="footer-one__links-list">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Departments</a></li>
+                                    <li><a href="#">Doctors</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul><!-- /.footer-one__links-list -->
+                            </div><!-- /.footer-one__widget -->
+                        </div><!-- /.col-lg-2 -->
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="footer-one__widget footer-one__link-widget">
+                                <h3 class="footer-one__widget-title">Quick Links</h3><!-- /.footer-one__widget-title -->
+                                <ul class="footer-one__links-list">
+                                    <li><a href="#">Get Appointment</a></li>
+                                    <li><a href="#">Our Doctor Team</a></li>
+                                    <li><a href="#">Departments Service</a></li>
+                                    <li><a href="#">About Hospital</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Get Reports</a></li>
+                                </ul><!-- /.footer-one__links-list -->
+                            </div><!-- /.footer-one__widget -->
+                        </div><!-- /.col-lg-2 -->
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="footer-one__widget footer-one__link-widget">
+                                <h3 class="footer-one__widget-title">Departments</h3><!-- /.footer-one__widget-title -->
+                                <ul class="footer-one__links-list">
+                                    <li><a href="#">Cardiology</a></li>
+                                    <li><a href="#">Pediatric</a></li>
+                                    <li><a href="#">Phychology</a></li>
+                                    <li><a href="#">Dental</a></li>
+                                    <li><a href="#">Neurology</a></li>
+                                    <li><a href="#">Orthopedics</a></li>
+                                </ul><!-- /.footer-one__links-list -->
+                            </div><!-- /.footer-one__widget -->
+                        </div><!-- /.col-lg-2 -->
+                        <div class="col-lg-2 col-md-6 col-sm-12">
+                            <div class="footer-one__widget footer-one__link-widget">
+                                <h3 class="footer-one__widget-title">Emergency</h3><!-- /.footer-one__widget-title -->
+                                <ul class="footer-one__links-list">
+                                    <li><a href="#">Appointment</a></li>
+                                    <li><a href="#">Doctors</a></li>
+                                    <li><a href="#">Cabins</a></li>
+                                    <li><a href="#">Treatments</a></li>
+                                    <li><a href="#">Surgery</a></li>
+                                    <li><a href="#">Consultancy</a></li>
+                                </ul><!-- /.footer-one__links-list -->
+                            </div><!-- /.footer-one__widget -->
+                        </div><!-- /.col-lg-2 -->
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-one__widget footer-one__link-widget">
+                                <h3 class="footer-one__widget-title">Follow Us</h3><!-- /.footer-one__widget-title -->
+                                <div class="footer-one__social">
+                                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </div><!-- /.footer-one__social -->
+                                <form action="#" class="footer-one__subscribe">
+                                    <input class="footer-one__subscribe-field" type="text" name="email" placeholder="Email Address">
+                                    <button class="footer-one__subscribe-submit" type="submit">Subscribe Now <i class="fa fa-long-arrow-right"></i></button>
+                                </form>
+                            </div><!-- /.footer-one__widget -->
+                        </div><!-- /.col-lg-4 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-one__top -->
+            <div class="footer-one__middle">
+                <div class="container">
+                    <div class="inner-container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="footer-one__widget about-widget">
+                                    <a href="index.html" class="footer-one__logo"><img src="static/portal/images/resources/logo-1-2.png" alt="Awesome Image" /></a>
+                                    <p class="footer-one__text">Lorem ipsum dolorit amet consectetur adipi scing <br> elit sedo eiusmod incididunt uttom labore etto <br> dolore magna aliqua.</p>
+                                    <a href="#" class="footer-one__map-link">View on google map</a>
+                                </div><!-- /.footer-one_widget -->
+                            </div><!-- /.col-lg-4 -->
+                            <div class="col-lg-2 col-md-6 col-sm-12">
+                                <div class="footer-one__widget contact-widget">
+                                    <h3 class="footer-one__widget-title">Email</h3><!-- /.footer-one__widget-title -->
+                                    <ul class="footer-one__contact-list">
+                                        <li class="footer-one__contact-list-item">hello@clainc.com</li>
+                                        <li class="footer-one__contact-list-item">emergency@live.com</li>
+                                    </ul><!-- /.footer-one__contact-list -->
+                                </div><!-- /.footer-one_widget -->
+                            </div><!-- /.col-lg-2 -->
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-one__widget contact-widget">
+                                    <h3 class="footer-one__widget-title">Phone</h3><!-- /.footer-one__widget-title -->
+                                    <ul class="footer-one__contact-list">
+                                        <li class="footer-one__contact-list-item">+1234 4567 7890</li>
+                                        <li class="footer-one__contact-list-item">+009 6612 3456 8</li>
+                                    </ul><!-- /.footer-one__contact-list -->
+                                </div><!-- /.footer-one_widget -->
+                            </div><!-- /.col-lg-3 -->
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-one__widget contact-widget">
+                                    <h3 class="footer-one__widget-title">Address</h3><!-- /.footer-one__widget-title -->
+                                    <ul class="footer-one__contact-list">
+                                        <li class="footer-one__contact-list-item">1234 North Luke Lane,</li>
+                                        <li class="footer-one__contact-list-item">South Bend, IN 360001</li>
+                                    </ul><!-- /.footer-one__contact-list -->
+                                </div><!-- /.footer-one_widget -->
+                            </div><!-- /.col-lg-3 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.inner-container -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-one__middle -->
+            <div class="footer-one__bottom">
+                <div class="container">
+                    <p class="footer-one__copy-text">&copy; 2019 Clainc | All Right Reserved</p><!-- /.copy-text -->
+                    <ul class="footer-one__bottom-links">
+                        <li class="footer-one__bottom-links-item"><a href="#">Privacy and Policy</a></li>
+                        <li class="footer-one__bottom-links-item"><a href="#">Terms and Services</a></li>
+                        <li class="footer-one__bottom-links-item"><a href="#">Developers</a></li>
+                    </ul><!-- /.footer-one__bottom-links -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-one__bottom -->
+        </footer><!-- /.footer-one -->
+    </div><!-- /.page-wrapper -->
+    <a href="#" data-target="html" data-target-offset="0" class="scroll-to-target scroll-to-top"><i class="material-icons">keyboard_arrow_up</i></a>
+    <!-- /.scroll-to-top -->
+    <script src="static/portal/js/jquery.js"></script>
+    <script src="static/portal/js/bootstrap.bundle.min.js"></script>
+    <script src="static/portal/js/bootstrap-select.min.js"></script>
+    <script src="static/portal/js/owl.carousel.min.js"></script>
+    <script src="static/portal/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/portal/js/bootstrap-datepicker.min.js"></script>
+    <script src="static/portal/js/jquery.validate.min.js"></script>
+    <script src="static/portal/js/wow.min.js"></script>
+    <script src="static/portal/js/theme.js"></script>
+</body>
+
+</html>
