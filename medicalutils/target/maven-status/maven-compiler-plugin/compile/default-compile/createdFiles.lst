@@ -1,0 +1,5 @@
+cn\ling\common\IPUtils.class
+cn\ling\common\MailTestComponent.class
+cn\ling\common\HttpContextUtils.class
+cn\ling\common\Md5Utils.class
+cn\ling\common\LogAspect.class

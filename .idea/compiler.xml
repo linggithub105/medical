@@ -7,11 +7,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="medicalBeans" />
+        <module name="medicalbeans" />
+        <module name="medicalconfig" />
+        <module name="medicalConfig" />
+        <module name="medicalDB" />
+        <module name="medicaldb" />
+        <module name="medicalutils" />
+        <module name="medicalUtils" />
+        <module name="medicalview" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="medical2" target="1.5" />
-      <module name="medicalBeans" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="medical2" target="1.8" />
+      <module name="medicalbeans" target="1.8" />
+      <module name="medicalconfig" target="1.8" />
+      <module name="medicaldb" target="1.8" />
+      <module name="medicalutils" target="1.8" />
+      <module name="medicalview" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

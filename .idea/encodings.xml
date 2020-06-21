@@ -2,6 +2,12 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicalbeans" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicalconfig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicaldb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicalportal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicalutils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicalview" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
