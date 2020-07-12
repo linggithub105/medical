@@ -50,9 +50,3 @@ spring:
       filter:
          stat:
           log-slow-sql: true
-
-mybatis:
-  # 扫描的实体类 取别名
-  type-aliases-package: cn.ling.medicalbeans.pojo
-  # mapper xml实现扫描路径
-  mapper-locations: classpath:mapper/*.xml

@@ -7,12 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="medicalBeans" />
-        <module name="medicalbeans" />
         <module name="medicalconfig" />
         <module name="medicalConfig" />
         <module name="medicalDB" />
-        <module name="medicaldb" />
-        <module name="medicalutils" />
         <module name="medicalUtils" />
         <module name="medicalview" />
       </profile>

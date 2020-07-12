@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("cn.ling.medicaldb.mapper")
+@MapperScan("cn.ling.medicalview.mapper")
 public class MedicalviewApplication {
 
 	public static void main(String[] args) {

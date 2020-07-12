@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>邮件模板</title>
+</head>
+<body>
+    <p>尊敬的<span th:text="${userName }"></span>，欢迎注册本网站。</p>
+    <p style="text-indent: 2em">以下是您的激活连接，请点击激活：</p>
+    <a th:href="@{http://localhost:8080/check(id=${id},time=${time},md5=${md5})}">激活连接</a>
+
+</body>
+</html>

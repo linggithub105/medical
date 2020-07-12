@@ -3,10 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/medical2.iml" filepath="$PROJECT_DIR$/medical2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/medicalbeans/medicalbeans.iml" filepath="$PROJECT_DIR$/medicalbeans/medicalbeans.iml" />
       <module fileurl="file://$PROJECT_DIR$/medicalconfig/medicalconfig.iml" filepath="$PROJECT_DIR$/medicalconfig/medicalconfig.iml" />
-      <module fileurl="file://$PROJECT_DIR$/medicaldb/medicaldb.iml" filepath="$PROJECT_DIR$/medicaldb/medicaldb.iml" />
-      <module fileurl="file://$PROJECT_DIR$/medicalutils/medicalutils.iml" filepath="$PROJECT_DIR$/medicalutils/medicalutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/medicalview/medicalview.iml" filepath="$PROJECT_DIR$/medicalview/medicalview.iml" />
     </modules>
   </component>

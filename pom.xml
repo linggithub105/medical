@@ -23,10 +23,7 @@
     </properties>
 
     <modules>
-        <module>medicalbeans</module>
-        <module>medicalutils</module>
         <module>medicalconfig</module>
-        <module>medicaldb</module>
         <module>medicalview</module>
     </modules>
 
@@ -53,6 +50,11 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
+        </dependency>
+        <!--AOP依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
         <!--支付宝-->
         <dependency>

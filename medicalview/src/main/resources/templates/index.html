@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:shiro="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
@@ -124,9 +125,14 @@
                             <li><a href="contact.html">加盟服务</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
-                    <div class="right-side-box">
+                    <div class="right-side-box" th:if="${userInfo==null}">
                         <a th:href="@{'login.html'}" class="header-one__login">Login</a>
                     </div><!-- /.right-side-box -->
+                    <div class="right-side-box1" th:if="${userInfo !=null}">
+                        <span class="header-one__login1">欢迎回来：</span>
+                        <a th:href="@{'choiceinto/'+${userInfo}} " style="color: red;float: right;font-weight: 700;" th:text="${userInfo.getUsername()}"></a>
+
+                    </div>
                 </div>
                 <!-- /.container -->
             </nav>

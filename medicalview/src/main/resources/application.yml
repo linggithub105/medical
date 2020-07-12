@@ -1,3 +1,8 @@
 spring:
   profiles:
-    include: dev,db
+    include: dev,db,util
+mybatis-plus:
+  # 扫描的实体类 取别名
+  type-aliases-package: cn.ling.medicalview.pojo
+  # mapper xml实现扫描路径
+  mapper-locations: classpath:mapper/*.xml

@@ -25,11 +25,12 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        <!--引入模块-->
+        <!--mybatis puls 整合Springboot-->
+        <!--只做增强不做改变，引入它不会对现有工程产生影响-->
         <dependency>
-            <groupId>cn.ling</groupId>
-            <artifactId>medicalbeans</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.1.0</version>
         </dependency>
 
     </dependencies>
