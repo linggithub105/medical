@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <title>后台管理系统</title>
@@ -11,7 +12,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="format-detection" content="telephone=no">
   <!--<script type="text/javascript" src="/static/xiyuan/lib/loading/okLoading.js"></script>-->
-  <link rel="stylesheet" href="static/admin/css/x-admin.css" media="all">
+  <link rel="stylesheet" th:href="@{../static/admin/css/x-admin.css}" media="all" >
 </head>
 <style>
   .show_list{display: block;}
@@ -46,7 +47,7 @@
             <i class="layui-icon" style="top: 1px;">&#xe63a;</i>
           </a>
         </li>
-        <li class="layui-nav-item"><img src="static/admin/images/logo.png" class="layui-circle" style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
+        <li class="layui-nav-item"><img src="../static/admin/images/logo.png" class="layui-circle" style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
         <li class="layui-nav-item"> <a href="javascript:;">admin</a>
           <dl class="layui-nav-child">
             <!-- 二级菜单 -->
@@ -64,7 +65,7 @@
   <div class="layui-side layui-bg-black x-side show_list" style="left:0px;" id="table1">
     <div style="height: 130px; width: 220px; ">
       <a class="img" title="我的头像" style="display: block;width: 80px;height: 80px;margin: 10px auto 10px;">
-        <img src="static/admin/images/logo.png" class="userAvatar" style="display: block;width: 100%;height: 100%;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;border: 4px solid #44576b;box-sizing: border-box;">
+        <img src="../static/admin/images/logo.png" class="userAvatar" style="display: block;width: 100%;height: 100%;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;border: 4px solid #44576b;box-sizing: border-box;">
       </a>
       <p style=" display: block;width: 100%;height: 25px;color: #ffffff;text-align: center;font-size: 12px;white-space: nowrap;line-height: 25px;overflow: hidden;">
         你好！<span class="userName">admin</span>, 欢迎回来
@@ -126,7 +127,7 @@
   <div class="layui-side layui-bg-black x-side hide_lits " style="left:0px;" id="table2">
     <div style="height: 130px; width: 220px; " class="head-img">
       <a class="img" title="我的头像" style="display: block;width: 80px;height: 80px;margin: 10px auto 10px;">
-        <img src="./images/logo.png" class="userAvatar" style="display: block;width: 100%;height: 100%;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;border: 4px solid #44576b;box-sizing: border-box;">
+        <img src="../static/admin/images/logo.png" class="userAvatar" style="display: block;width: 100%;height: 100%;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;border: 4px solid #44576b;box-sizing: border-box;">
       </a>
       <p style=" display: block;width: 100%;height: 25px;color: #ffffff;text-align: center;font-size: 12px;white-space: nowrap;line-height: 25px;overflow: hidden;">
         你好！<span class="userName">admin</span>, 欢迎回来
@@ -184,7 +185,7 @@
     </ul>
     <div class="layui-tab-content site-demo site-demo-body">
       <div class="layui-tab-item layui-show">
-        <iframe frameborder="0" src="./welcome.html" class="x-iframe"></iframe>
+        <th:iframe frameborder="0" th:src="@{welcome.html}" class="x-iframe"></th:iframe>
       </div>
     </div>
   </div>
@@ -192,10 +193,10 @@
 
 </div>
 
-<script src="./lib/layui/layui.js" charset="utf-8"></script>
-<script src="./js/x-admin.js"></script>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/x-layui.js" charset="utf-8"></script>
+<script th:src="@{../static/admin/lib/layui/layui.js}" charset="utf-8"></script>
+<script th:src="@{../static/admin/js/x-admin.js}"></script>
+<script th:src="@{../static/admin/js/jquery.min.js}"></script>
+<script th:src="@{../static/admin/js/x-layui.js}" charset="utf-8"></script>
 
 <script>
     $(".daohang").click(function(){

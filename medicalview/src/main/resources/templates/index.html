@@ -130,7 +130,7 @@
                     </div><!-- /.right-side-box -->
                     <div class="right-side-box1" th:if="${userInfo !=null}">
                         <span class="header-one__login1">欢迎回来：</span>
-                        <a th:href="@{'choiceinto/'+${userInfo}} " style="color: red;float: right;font-weight: 700;" th:text="${userInfo.getUsername()}"></a>
+                        <a th:href="@{'choiceinto/'+${userInfo.getUserstate()}} " style="color: red;float: right;font-weight: 700;" th:text="${userInfo.getUsername()}"></a>
 
                     </div>
                 </div>

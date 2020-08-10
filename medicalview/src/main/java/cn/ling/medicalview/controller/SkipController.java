@@ -1,10 +1,14 @@
 package cn.ling.medicalview.controller;
 
 import cn.ling.medicalview.pojo.User;
+import com.baomidou.mybatisplus.extension.api.R;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.websocket.server.PathParam;
 
 @Controller
 public class SkipController {
@@ -39,17 +43,22 @@ public class SkipController {
      * @return
      */
     @RequestMapping("choiceinto/{userInfo}")
-    public String choiceinto(@PathVariable User userInfo){
-        if(userInfo.getUserstate()==0){
+    public String choiceinto(@PathVariable("userInfo")Integer userInfo){
+        if(userInfo==0){
             //此用户为管理员
             return "admin/index";
-        }else if(userInfo.getUserstate()==1){
+        }else if(userInfo==1){
             //此用户为普通用户
-            return "";
-        }else if(userInfo.getUserstate()==2){
+            return "usercenter/index";
+        }else if(userInfo==2){
             //此用户为加盟商医院
             return "hospital/index";
         }
         return "error";
+    }
+
+    @RequestMapping("blog/intomain")
+    public String blogintomain(){
+        return "usercenter/blogshow/index";
     }
 }
