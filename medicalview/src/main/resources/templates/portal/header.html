@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:shiro="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="header">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home One || Clainc || Health & Medical HTML Template</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="../static/portal/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../static/portal/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../static/portal/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../static/portal/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../static/portal/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../static/portal/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../static/portal/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../static/portal/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../static/portal/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../static/portal/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/portal/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../static/portal/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../static/portal/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../static/portal/images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../static/portal/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="../static/portal/css/style.css">
+        <link rel="stylesheet" href="../static/portal/css/responsive.css">
+    </head>
+    <div>
+    <div class="preloader"></div><!-- /.preloader -->
+    <div class="page-wrapper">
+        <section class="topbar-one">
+            <div class="container">
+                <ul class="topbar-one__contact">
+                    <li class="topbar-one__contact-item"><a href="mailto:help@example.com"><i class="material-icons">email</i>help@example.com</a></li>
+                    <li class="topbar-one__contact-item"><a href="callto:123456789101"><i class="material-icons">local_phone</i>1234&nbsp;&nbsp;5678&nbsp;&nbsp;9101</a></li>
+                </ul><!-- /.topbar-one__contact -->
+                <div class="topbar-one__buttons">
+                    <select class="selectpicker topbar-one__language">
+                        <option>En</option>
+                        <option>Bn</option>
+                        <option>Du</option>
+                    </select>
+                    <a href="portal/medicalMain" class="topbar-one__btn">Get 医院登录入口</a>
+                </div><!-- /.topbar-one__buttons -->
+            </div><!-- /.container -->
+        </section><!-- /.topbar-one -->
+        <header class="site-header header-one">
+            <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                <div class="container clearfix">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="logo-box clearfix">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="../static/portal/images/resources/logo-1-1.png" class="main-logo" alt="Awesome Image" />
+                        </a>
+                        <button class="menu-toggler" data-target=".main-navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div><!-- /.logo-box -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main-navigation">
+                        <ul class=" navigation-box">
+                            <li class="current">
+                                <a href="index.html">Home</a>
+                                <ul class="submenu">
+                                    <li><a href="index.html">Home One</a></li>
+                                    <li><a href="index-2.html">Home Two</a></li>
+                                    <li><a href="index-3.html">Home Three</a></li>
+                                    <li><a href="index-4.html">Home Four</a></li>
+                                    <li><a href="dental-1.html">Dental One</a></li>
+                                    <li><a href="dental-2.html">Dental Two</a></li>
+                                    <li><a href="blood-donation.html">Blood Dontation</a></li>
+                                    <li><a href="blood-donation.html">Header Versions</a>
+                                        <ul class="submenu">
+                                            <li><a href="index.html">Header One</a></li>
+                                            <li><a href="index-2.html">Header Two</a></li>
+                                            <li><a href="index-3.html">Header Three</a></li>
+                                            <li><a href="dental-1.html">Header Four</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li>
+                                <a href="services.html">Departments</a>
+                            </li>
+                            <li>
+                                <a href="about-1.html">About</a>
+                                <ul class="submenu">
+                                    <li><a href="about-1.html">About One</a></li>
+                                    <li><a href="about-2.html">About Two</a></li>
+                                    <li><a href="about-3.html">About Three</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+
+                            <li>
+                                <a href="#">Pages</a>
+                                <ul class="submenu">
+                                    <li><a href="doctors.html">Team</a></li>
+                                    <li><a href="history-slide.html">History</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="appointment.html">Appointment</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li>
+                                <a href="pharmacy.html">Shop</a>
+                                <ul class="submenu">
+                                    <li><a href="pharmacy.html">Shop Page</a></li>
+                                    <li><a href="medicine-details.html">Medicine Details</a></li>
+                                    <li><a href="cart.html">Cart Page</a></li>
+                                    <li><a href="checkout.html">Checkout Page</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li><a href="notice.html">Notice</a></li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                                <ul class="submenu">
+                                    <li><a href="blog-1.html">Blog Style 01</a></li>
+                                    <li><a href="blog-2.html">Blog Style 02</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li><a th:href="@{'portal/tojoin'}">加盟服务QAQ</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                    <div class="right-side-box" th:if="${session.user == null}">
+                        <a th:href="@{'login.html'}" class="header-one__login">Login</a>
+                    </div><!-- /.right-side-box -->
+                    <div class="right-side-box1" th:if="${session.user != null}">
+                        <a th:href="@{${#servletContext.contextPath}+'/userLogout/logout.do'}"><span class="header-one__login1">欢迎回来：</span></a>
+                        <a th:href="@{${#servletContext.contextPath}+'choiceinto/'+${session.user.getUserstate()}} " style="color: red;float: right;font-weight: 700;" th:text="${session.user.getUsercode()}"></a>
+
+
+                    </div>
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header><!-- /.header-one -->
+    </div>
+        <!-- /.scroll-to-top -->
+        <script src="../static/portal/js/jquery.js"></script>
+        <script src="../static/portal/js/bootstrap.bundle.min.js"></script>
+        <script src="../static/portal/js/bootstrap-select.min.js"></script>
+        <script src="../static/portal/js/owl.carousel.min.js"></script>
+        <script src="../static/portal/js/jquery.magnific-popup.min.js"></script>
+        <script src="../static/portal/js/bootstrap-datepicker.min.js"></script>
+        <script src="../static/portal/js/jquery.validate.min.js"></script>
+        <script src="../static/portal/js/wow.min.js"></script>
+        <script src="../static/portal/js/theme.js"></script>
+</div>
+
+</html>

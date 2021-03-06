@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:shiro="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>平台个人中心</title>
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<link href="http://localhost:8083/static/usercenter/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<section class="aui-flexView">
+	<header class="aui-navBar aui-navBar-fixed">
+		<a href="javascript:;" class="aui-navBar-item">
+			我的管理
+		</a>
+		<div class="aui-center">
+			<span class="aui-center-title"></span>
+		</div>
+		<a th:href="@{${#servletContext.contextPath}+'/userLogout/logout.do'}" class="aui-navBar-item">
+			<input class="icon icon-set"> 注销 </input>
+		</a>
+	</header>
+	<section class="aui-scrollView">
+		<div class="aui-mine-box">
+			<div class="aui-mine-img">
+				<img th:src="@{${#servletContext.contextPath}+'/static/usercenter/images/user-logo-004.png'}" alt="">
+			</div>
+			<h2 th:text="${userInfo.getUsercode()}"></h2>
+		</div>
+		<div class="aui-palace aui-palace-one">
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-text">
+					<h1 th:text="${userInfo.getBalance()}" ></h1>
+					<p>康橙卡(元)</p>
+				</div>
+			</a>
+            <a href="javascript:;" class="aui-palace-grid">
+                <div class="aui-palace-grid-text">
+                    <h1 th:text="${userInfo.getIntegral()}"></h1>
+                    <p>积分</p>
+                </div>
+            </a>
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-text">
+					<h1>98</h1>
+					<p>优惠券(张)</p>
+				</div>
+			</a>
+		</div>
+		<div class="aui-flex aui-flex-bo">
+			<div class="aui-flex-box">
+				<h2>我的服务</h2>
+			</div>
+		</div>
+		<div class="aui-palace aui-palace-two">
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-001.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>我的订单</h2>
+				</div>
+			</a>
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-002.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>我的报告</h2>
+				</div>
+			</a>
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-003.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>挂号订单</h2>
+				</div>
+			</a>
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-004.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>咨询订单</h2>
+				</div>
+			</a>
+		</div>
+		<div class="aui-flex aui-flex-bo">
+			<div class="aui-flex-box">
+				<h2>常用工具</h2>
+			</div>
+		</div>
+		<div class="aui-palace aui-palace-two">
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-005.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>快速预约</h2>
+				</div>
+			</a>
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-006.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>家人人员</h2>
+				</div>
+			</a>
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-007.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>邀请有奖</h2>
+				</div>
+			</a>
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-008.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>二次分诊</h2>
+				</div>
+			</a>
+			<a th:href="@{${#servletContext.contextPath}+'/user/intoTurntable/'+${userInfo.getUid()}}" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-009.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>我的活动</h2>
+				</div>
+			</a>
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-010.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>了解我们</h2>
+				</div>
+			</a>
+			<a href="javascript:;" class="aui-palace-grid">
+				<div class="aui-palace-grid-icon">
+					<img src="http://localhost:8083/static/usercenter/images/nav-011.png" alt="">
+				</div>
+				<div class="aui-palace-grid-text">
+					<h2>常见问题</h2>
+				</div>
+			</a>
+		</div>
+		<div class="aui-flex aui-flex-bo">
+			<div class="aui-flex-box">
+				<h2>更多服务</h2>
+			</div>
+		</div>
+		<div class="aui-image-text ">
+			<a href="javascript:;" class="aui-flex ">
+				<div class="aui-flex-box">
+					<h2>健康好物</h2>
+					<p>如何对抗细菌的方法</p>
+					<span><em>点击了解</em><i class="icon icon-play"></i></span>
+				</div>
+				<div class="aui-shrink-img">
+					<img src="http://localhost:8083/static/usercenter/images/fl-001.png" alt="">
+				</div>
+			</a>
+			<a href="javascript:;" class="aui-flex ">
+				<div class="aui-flex-box">
+					<h2>肠胃健康</h2>
+					<p>肠胃保卫战买一赠一</p>
+					<span><em>点击了解</em> <i class="icon icon-play"></i></span>
+				</div>
+				<div class="aui-shrink-img">
+					<img src="http://localhost:8083/static/usercenter/images/fl-002.png" alt="">
+				</div>
+			</a>
+		</div>
+
+	</section>
+	<footer class="aui-footer aui-footer-fixed">
+		<a th:href="@{${#servletContext.contextPath}+'/user/index.html'}" class="aui-tabBar-item ">
+                <span class="aui-tabBar-item-icon">
+                    <i class="icon icon-loan"></i>
+                </span>
+			<span class="aui-tabBar-item-text">主页</span>
+		</a>
+		<a href="javascript:;" class="aui-tabBar-item ">
+                <span class="aui-tabBar-item-icon">
+                    <i class="icon icon-credit"></i>
+                </span>
+			<span class="aui-tabBar-item-text">分院</span>
+		</a>
+		<a href="javascript:;" class="aui-tabBar-item ">
+                <span class="aui-tabBar-item-icon">
+                    <i class="icon icon-ions"></i>
+                </span>
+			<span class="aui-tabBar-item-text">热销</span>
+		</a>
+		<a href="javascript:;" class="aui-tabBar-item ">
+                <span class="aui-tabBar-item-icon">
+                    <i class="icon icon-six"></i>
+                </span>
+			<span class="aui-tabBar-item-text">报告</span>
+		</a>
+		<a href="javascript:;" class="aui-tabBar-item aui-tabBar-item-active">
+                <span class="aui-tabBar-item-icon">
+                    <i class="icon icon-car"></i>
+                </span>
+			<span class="aui-tabBar-item-text">我的</span>
+		</a>
+	</footer>
+</section>
+</body>
+
+</html>
