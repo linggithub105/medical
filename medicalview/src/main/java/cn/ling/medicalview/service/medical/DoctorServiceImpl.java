@@ -54,4 +54,9 @@ public class DoctorServiceImpl implements DoctorService {
         }
         return 0;
     }
+
+    @Override
+    public List<Doctor> getDoctorInfoList(Integer hid, String officeName) {
+        return doctorMapper.getDoctorInfoList(hid,officeName);
+    }
 }

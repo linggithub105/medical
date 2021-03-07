@@ -30,12 +30,16 @@ public class PortalSkipController {
      * 跳转主页面
      * @return
      */
-    @RequestMapping("index.html")
+    @RequestMapping("proindex.html")
     public String skipIndex(){
         return "index";
     }
 
-    @RequestMapping("portal/medicalAdmin")
+    /**
+     *
+     * @return
+     */
+    @RequestMapping("/medicalAdmin")
     public String portalmedicalAdmin(){
         return "hospital/index";
     }

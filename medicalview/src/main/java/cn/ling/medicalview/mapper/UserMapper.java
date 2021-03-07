@@ -10,4 +10,5 @@ import org.springframework.stereotype.Repository;
  */
 //@Repository   //用户模块使用mybatis plus
 public interface UserMapper extends BaseMapper<User> {
+
 }

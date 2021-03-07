@@ -15,6 +15,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,7 +31,7 @@ public class UserLoginController {
     @RequestMapping("regUserLogin")
     public String regUserLogin(@RequestParam("userInfo")String userInfo,
                                @RequestParam("userPass")String userPass,
-                               Model model){
+                               Model model, HttpSession httpSession){
         /**
          * 使用shiro 进行验证
          */
@@ -42,7 +44,8 @@ public class UserLoginController {
             subject.login(usernamePasswordToken);
             //能够获取SimpleAuthenticationInfo  的
             User user = (User)subject.getPrincipal();
-            model.addAttribute("userInfo",user);
+            httpSession.setAttribute("session",user);
+            //model.addAttribute("userInfo",user);
             return "index";
             //未发生异常，登录成功
         }catch (UnknownAccountException e){

@@ -55,6 +55,6 @@ public class UserController {
     @RequestMapping("numberCalculate/ajax/{uid}/{num}")
     @ResponseBody //以json格式响应
     public Map<String, String> numberCalculate(@PathVariable("uid") Integer uid, @PathVariable("num") String num) {
-       return userService.numberCalculate(uid,num);
+       return null;//userService.numberCalculate(uid,num);
     }
 }

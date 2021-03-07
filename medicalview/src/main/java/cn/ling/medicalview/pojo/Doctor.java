@@ -1,11 +1,16 @@
 package cn.ling.medicalview.pojo;
 
+import lombok.Data;
+
+import java.util.Date;
+
+@Data
 public class Doctor {
     private Integer did;
 
-    private Integer hid;
+    private Integer hid;//医院id
 
-    private Integer oid;
+    private Integer oid;//科室名称
 
     private String doctcode;
 
@@ -13,7 +18,7 @@ public class Doctor {
 
     private String doctsex;
 
-    private Integer doctage;
+    private Date doctbitrh;
 
     private String doctphone;
 
@@ -21,103 +26,11 @@ public class Doctor {
 
     private String doctemail;
 
-    private String doctintr;
+    private String doctintr;//个人简历图片 .jpg
 
     private String doctimage;
 
-    public Integer getDid() {
-        return did;
-    }
+    private Date entrydate;//入职时间
 
-    public void setDid(Integer did) {
-        this.did = did;
-    }
-
-    public Integer getHid() {
-        return hid;
-    }
-
-    public void setHid(Integer hid) {
-        this.hid = hid;
-    }
-
-    public Integer getOid() {
-        return oid;
-    }
-
-    public void setOid(Integer oid) {
-        this.oid = oid;
-    }
-
-    public String getDoctcode() {
-        return doctcode;
-    }
-
-    public void setDoctcode(String doctcode) {
-        this.doctcode = doctcode == null ? null : doctcode.trim();
-    }
-
-    public String getDoctname() {
-        return doctname;
-    }
-
-    public void setDoctname(String doctname) {
-        this.doctname = doctname == null ? null : doctname.trim();
-    }
-
-    public String getDoctsex() {
-        return doctsex;
-    }
-
-    public void setDoctsex(String doctsex) {
-        this.doctsex = doctsex == null ? null : doctsex.trim();
-    }
-
-    public Integer getDoctage() {
-        return doctage;
-    }
-
-    public void setDoctage(Integer doctage) {
-        this.doctage = doctage;
-    }
-
-    public String getDoctphone() {
-        return doctphone;
-    }
-
-    public void setDoctphone(String doctphone) {
-        this.doctphone = doctphone == null ? null : doctphone.trim();
-    }
-
-    public String getAppellation() {
-        return appellation;
-    }
-
-    public void setAppellation(String appellation) {
-        this.appellation = appellation == null ? null : appellation.trim();
-    }
-
-    public String getDoctemail() {
-        return doctemail;
-    }
-
-    public void setDoctemail(String doctemail) {
-        this.doctemail = doctemail == null ? null : doctemail.trim();
-    }
-
-    public String getDoctintr() {
-        return doctintr;
-    }
-
-    public void setDoctintr(String doctintr) {
-        this.doctintr = doctintr == null ? null : doctintr.trim();
-    }
-
-    public String getDoctimage() {
-        return doctimage;
-    }
-
-    public void setDoctimage(String doctimage) {
-        this.doctimage = doctimage == null ? null : doctimage.trim();
-    }
+    private Office office;//科室对象
 }

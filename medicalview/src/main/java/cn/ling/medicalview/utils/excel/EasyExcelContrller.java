@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * https://www.yuque.com/easyexcel/doc/easyexcel#9cd151de  EasyExcel
+ *   EasyExcel
  */
 @Controller
 @RequestMapping("excel")

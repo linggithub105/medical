@@ -5,14 +5,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-@RequestMapping({"*/",""})
+@RequestMapping({"hospital/"})
 public class MedicalSkipConmtroller {
 
     /**
      * 跳转医院综合管理
      * @return
      */
-    @RequestMapping("hospital/Management")
+    @RequestMapping("Management")
     public String hospitalManagement() {
         return "hospital/child";
     }
@@ -20,7 +20,7 @@ public class MedicalSkipConmtroller {
      * 跳转医院医生添加
      * @return
      */
-    @RequestMapping("hospital/YuanGong_tj")
+    @RequestMapping("YuanGong_tj")
     public String hospitalYuanGong_tj(){
         return "hospital/YuanGong_tj";
     }
@@ -29,7 +29,7 @@ public class MedicalSkipConmtroller {
      * 跳转医生列表
      * @return
      */
-    @RequestMapping("hospital/YuanGonglist")
+    @RequestMapping("YuanGonglist")
     public String hospitalYuanGonglist(){
         return "hospital/YuanGonglist";
     }
