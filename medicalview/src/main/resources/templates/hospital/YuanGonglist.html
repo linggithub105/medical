@@ -53,7 +53,6 @@
 		<thead>
 			<tr>
 				<th lay-data="{type:'checkbox',fixed:'left'}"></th>
-                <th lay-data="{field:'tel',align:'center',width:130}">排序</th>
 				<th lay-data="{field:'yx', align:'center',width:160}">所属部门</th>
 				<th lay-data="{field:'time',align:'center', minWidth:170}">员工姓名</th>
 				<th lay-data="{field:'www',align:'center',minWidth:260}">职位职称</th>
@@ -66,18 +65,17 @@
 			</tr> 
 		</thead>
 		<tbody>
-			<tr>
+			<tr th:each="doctor:${DoctorList}">
 				<td></td>
-				<td>技术部</td>
-				<td>杨俊</td>
-				<td>技术总监（CTO）</td>
-				<td>81601001</td>
-				<td>男</td>
-				<td>1</td>
-				<td>经理</td>
-                <td>管理员</td>
-				<td><a href="#" class="jianl_list_img" onclick=" YuanG_IMG()"><img src="http://localhost:8083/static/hospital/images/jl.jpg"></a></td>
-			</tr> 
+				<td th:text="${doctor.office.officename}"></td>
+				<td th:text="${doctor.doctname}"></td>
+				<td th:text="${doctor.appellation}"></td>
+				<td th:text="${doctor.doctcode}"></td>
+				<td th:text="${doctor.doctsex}"></td>
+				<td th:text="${doctor.doctphone}"></td>
+				<td th:text="${#dates.format(doctor.entrydate, 'yyyy-MM-dd')}"></td>
+                <td><a href="javascript:;" class="jianl_list_img" th:onclick="|YuanG_IMG('${doctor.doctintr}')|"><img th:src="@{${#servletContext.contextPath}+'/static/hospital/images/YuanG_IMG/'+${doctor.doctintr}}"></a></td>
+			</tr>
 		</tbody>  
 	</table>
 	<script type="text/html" id="barDemo">
@@ -101,7 +99,7 @@
 		<button class="layui-btn layui-btn-sm" lay-event="excelInput">批量导入</button>
 
 	</div>
-</script> 
+</script>
 <script type="text/javascript">
 	//静态表格
     layui.use('table',function(){
@@ -182,8 +180,9 @@
             });
 	}); 
 	  //  iframe层  详情信息
-    function YuanG_IMG(){
-        //iframe层 
+    function YuanG_IMG(doctintr){
+        alert("查看员工简历 ="+doctintr)
+        //iframe层
         layer.open({
             type: 2,//层类型
             title: "简历图片",//标题
@@ -195,11 +194,11 @@
             // offset: 'rb', //右下角弹出
 			time: 1000*60*60, //2秒后自动关闭
             anim: 5,//动画
-            content: ['http://localhost:8083/static/hospital/images/jl.jpg', 'yes'], //iframe的url，no代表不显示滚动条
+            content: ['http://localhost:8083/static/hospital/images/YuanG_IMG/'+doctintr, 'yes'], //iframe的url，no代表不显示滚动条
         }); 
         
     }
-</script> 
+</script>
 
 
 </body>

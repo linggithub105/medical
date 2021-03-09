@@ -29,8 +29,8 @@
     </resultMap>
     <!--@Param("hid")中的参数-->
     <select id="getDoctorInfoList" resultMap="DoctorInfoListid">
-      SELECT doc.*,of.`officeName` FROM `doctor` doc
-        LEFT JOIN `office` of ON of.oid=doc.`oid`
+      SELECT doc.*,off.`officeName` FROM `doctor` doc
+        LEFT JOIN `office` off ON off.oid=doc.`oid`
         <where>
             <if test="hid!=null and hid!='' ">
                 AND hid=#{hid}

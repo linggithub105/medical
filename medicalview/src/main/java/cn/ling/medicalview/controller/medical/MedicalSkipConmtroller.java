@@ -25,12 +25,4 @@ public class MedicalSkipConmtroller {
         return "hospital/YuanGong_tj";
     }
 
-    /**
-     * 跳转医生列表
-     * @return
-     */
-    @RequestMapping("YuanGonglist")
-    public String hospitalYuanGonglist(){
-        return "hospital/YuanGonglist";
-    }
 }
