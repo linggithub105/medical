@@ -7,6 +7,7 @@ import cn.ling.medicalview.mapper.OfficeMapper;
 import cn.ling.medicalview.pojo.Doctor;
 import cn.ling.medicalview.pojo.Office;
 import org.apache.log4j.Logger;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -40,10 +41,6 @@ public class DoctorServiceImpl implements DoctorService {
 
                     doctor.setHid(hospId);
                     doctor.setOid(offId);
-
-
-
-
 
                     doctorMapper.insertDoctor(doctor);
                 }

@@ -4,14 +4,16 @@ import cn.ling.medicalview.mapper.UserMapper;
 import cn.ling.medicalview.pojo.User;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import javax.annotation.Resource;
 import java.util.List;
 
 @Service("userService")
 public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements UserService {
+    @Resource
+    private JdbcTemplate jdbcTemplate;//操作数据库
+
     @Override
     public int addUser(User user) {
         return 0;
